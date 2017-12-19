@@ -1,0 +1,16 @@
+没有数据库应用程序，只能靠内存上的数据集合，还有记录用的文本文件
+说明:SongList.txt 是文件系统写出的文件，文件上列出歌曲，每行代表一首歌，歌名与歌星用斜线分开
+
+功能一:以歌名排序
+       1.将数据存放到TreeSet中，但是会插入新元素时需要给新元素找合适的位置插入，交复杂
+       2.Collections.sort(songList)
+
+总结:读取resources下的文件
+
+方法1:
+    通过获取classloader来获取resource文件:
+        InputStream is = Jukebox1.class.getClassLoader().getResourceAsStream("SongList.txt");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+    想获得文件，你得从最终生成的.class文件为着手点，不要以.java文件的路径为出发点，因为真正使用的就是.class,
+ getResouce()方法的参数，你以class为出发点，再结合相对路径的概念，就可以准确地定位资源文件了.
+    getResourceAsStream()方法，参数是与getResouce()方法是一样的，它相当于你用getResource()取得File文件后，再new InputStream(file)一样的结果。

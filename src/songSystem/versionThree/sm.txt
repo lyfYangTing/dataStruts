@@ -1,0 +1,19 @@
+新需求:需要实现多种排序
+
+现存的问题:
+集合元素的排序只能实现一个compareTo(),即仅仅可以实现一种排序规则
+
+解决方式:通过另一种sort()方法，即sort(List o,Comparator c)
+
+新版本做了3件事:
+1)创建并实现Comparator的内部类，以compare()方法取代compareTo()方法。
+2)制作该类的实例
+3)调用重载版的sort(),传入歌曲的list以及Comparator的实例
+
+总结:
+1.sort(List list)方法和sort(List list,Comparator c)的区别
+  1)调用单一参数的sort(List list)方法代表由list元素上的compareTo()方法来决定顺序。
+    因此元素必须要实现Comparable这个接口
+  2)调用sort(List list,Comparator c)方法代表不会调用list元素的compare()方法，
+    而会使用Comparator的compare()方法。这意味着list元素不需要实现Comparable。
+  3)

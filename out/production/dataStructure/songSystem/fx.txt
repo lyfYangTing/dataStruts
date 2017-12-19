@@ -1,0 +1,7 @@
+泛型相关:
+1)public void takeAnimals(ArrayList<? extends Animal> animals){}
+  该方法可以接受Animal子类元素的集合
+  此处的extends同时代表继承和实现
+  注意：使用带有<?>的声明时，编译器不允许向集合中添加任何元素
+2)public <T extends Animal> void takeThing(ArrayList<T> list)
+ 与上一种声明方式达到的效果是一样的

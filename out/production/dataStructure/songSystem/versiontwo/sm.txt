@@ -1,0 +1,23 @@
+关于Collections中的sort()方法:
+ArrayList<String> list = new ArrayList<String>();
+Collections.sort(list);//可以通过编译
+
+ArrayList<Song> list = new ArrayList<Song>();
+Collections.sort(list);//不可以通过编译
+
+问题出现的原因:
+Collections中的sort方法声明为:
+public static <T extends Comparable<? supper T>> void sort(List<T> list)  用到了泛型
+
+sort()方法只能接受Comparable对象的list,song不是Comparable的子型，所以无法对Song的list排序
+泛型:泛型意味着更好的类型安全性
+     以泛型的观点来说，extends代表extends或implement,代表是一个......,包括用于类和接口
+
+
+解决方法:Song实现Comparable接口，并实现compareTo方法
+@Override
+public int compareTo(Song o) {////返回负数值表示传入的Song大于执行的Song
+    return this.title.compareTo(o.getTitle());//按照歌名来排序
+}
+
+
