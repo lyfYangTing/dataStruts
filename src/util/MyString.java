@@ -82,18 +82,42 @@ public class MyString {
         }
         return sb[0].toString()+" "+sb[1].toString();
     }
+
+    public String reverseString(String original){
+        return new StringBuffer(original).reverse().toString();
+    }
+
+    public static String reverseTest(String original){
+        char[] value = original.toCharArray();
+        int n = value.length - 1;
+        for (int j = (n-1) >> 1; j >= 0; j--) {
+            int k = n - j;
+            char cj = value[j];
+            char ck = value[k];
+            value[j] = ck;
+            value[k] = cj;
+            if (Character.isSurrogate(cj) ||
+                    Character.isSurrogate(ck)) {
+                System.out.println(cj +"-------------------------"+ck);
+            }
+        }
+        return String.valueOf(value);
+    }
     public static void main(String[] args){
 //        System.out.println(MyString.convertAnagrams("imkhnpqnhlvaxlmrsskbyyrhwfvgteubrelgubvdmrdmesfxkpykprunzpustowmvhupkqsyjxmnptkcilmzcinbzjwvxshubeln","wfnfdassvfugqjfuruwrdumdmvxpbjcxorettxmpcivurcolxmeagsdundjronoehtyaskpwumqmpgzmtdmbvsykxhblxspgnpgfzydukvizbhlwmaajuytrhxeepvmcltjmroibjsdkbqjnqjwmhsfopjvehhiuctgthrxqjaclqnyjwxxfpdueorkvaspdnywupvmy"));
 //        System.out.println(MyString.numberNeeded("imkhnpqnhlvaxlmrsskbyyrhwfvgteubrelgubvdmrdmesfxkpykprunzpustowmvhupkqsyjxmnptkcilmzcinbzjwvxshubeln","wfnfdassvfugqjfuruwrdumdmvxpbjcxorettxmpcivurcolxmeagsdundjronoehtyaskpwumqmpgzmtdmbvsykxhblxspgnpgfzydukvizbhlwmaajuytrhxeepvmcltjmroibjsdkbqjnqjwmhsfopjvehhiuctgthrxqjaclqnyjwxxfpdueorkvaspdnywupvmy"));
-          Scanner sc = new Scanner(System.in);
-        int n = Integer.parseInt(sc.nextLine());
-        String[] originals = new String[n];
-        for(int i=0;i<n;i++){
-            originals[i] = sc.nextLine();
-        }
-        sc.close();
-        for(int i=0;i<originals.length;i++){
-            System.out.println(MyString.getOddAndEvenNumber(originals[i]));
-        }
+//          Scanner sc = new Scanner(System.in);
+//        int n = Integer.parseInt(sc.nextLine());
+//        String[] originals = new String[n];
+//        for(int i=0;i<n;i++){
+//            originals[i] = sc.nextLine();
+//        }
+//        sc.close();
+//        for(int i=0;i<originals.length;i++){
+//            System.out.println(MyString.getOddAndEvenNumber(originals[i]));
+//        }
+        String test = "按照四则运算";
+        System.out.println(test);
+        System.out.println(MyString.reverseTest(test));
     }
 }

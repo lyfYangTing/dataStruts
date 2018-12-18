@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/diGui/BinarySearch.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/diGui/DiGuiTextOne.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/diGui/DisplacementWord.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/diGui/TriangleNumber.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/diGui/zd.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/myString/MyTestOne.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/myTree/BinarySearchTree.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/myTree/HalfSearch.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/myTree/MyTree.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/myTree/Node.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/queueTest/lsccQueue/QueueText.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/queueTest/lsccQueue/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/queueTest/sxccQueue/ArrayQueue.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/queueTest/sxccQueue/Test.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/MyArray.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/MyMath.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/MySet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/MyString.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/MyTwoArrayOption.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/util/Text.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/util/TxtToExcel.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/wan/YouXiOne.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
